@@ -368,7 +368,7 @@ Initialize the Object array with the default length of 5. The capacity of the Ar
 * `public MyArrayList(int initialCapacity)`:
 Initialize the Object array with the length of `initialCapacity`. If the `initialCapacity` is invalid (i.e. any value of `initialCapacity` strictly less than 0), throw an `IllegalArgumentException`.
 * `public MyArrayList (E[] arr)`: \
-Initialize the instance variables with the input array (shallow copy) of capacity equal to the length of `arr`. All elements in `arr` are valid (even the `null`s), so set `size` accordingly. If `arr` is `null`, fall back to the behavior of the no-arg constructor (construct an ArrayList with the default capacity).
+Initialize the instance variables with the input array (deep copy) of capacity equal to the length of `arr`. All elements in `arr` are valid (even the `null`s), so set `size` accordingly. If `arr` is `null`, fall back to the behavior of the no-arg constructor (construct an ArrayList with the default capacity).
 
 
 #### **Public Methods**
